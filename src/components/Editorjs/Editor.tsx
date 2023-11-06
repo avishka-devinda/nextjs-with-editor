@@ -70,7 +70,7 @@ export default function Editor() {
         console.log(`Editor.js initialization failed because of ${reason}`)
       }
 
-       onChange: (api, event) => {
+       onChange: (api:any, event:any) => {
      console.log('Now I know that Editor\'s content changed!', event)
    }
     }
@@ -113,9 +113,9 @@ export default function Editor() {
   
 
   return (
-    <>
+    <div>
       <div id="editor-js" className="prose prose-lg max-w-full min-h-screen" />
       <button onClick={save} className="bg-zinc-900 text-white p-5">Save</button>
-    </>
+    </div>
   );
 }
